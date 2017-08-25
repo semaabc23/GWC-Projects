@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Semaab Chaudhry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+  <h1 style="background-color:#ffe6cc"> Semaab's Portfolio </h1>
+  <h4 title="A lil about me"> Young traveler, learner, artist.</h4>
+<ul>
+  <li><a href="portfolio.html">Home</a></li>
+  <li><a href="aboutme.html">About Me</a></li>
+  <li><a href="volunteerwork.html">Work Experiences</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  </ul>
+  <h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px", "max-height:400px">
+  <img class="mySlides" src="me.jpg" style="width:100%">
+  <img class="mySlides" src="coding.jpg" style="width:100%">
+  <img class="mySlides" src="library.jpg" style="width:100%">
+  <img class="mySlides" src="landscape.jpg" style="width:100%">
+  <img class="mySlides" src="travel.jpg" style="width:100%">
+  <img class="mySlides" src="music.jpg" style="width:100%">
+</div>
+
+//Add music//
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
